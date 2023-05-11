@@ -130,7 +130,4 @@ print(eliminar_duplicados([100,30,50,100,300,350,40,350])) """
     return max(numeros)-min(numeros)
 print(calcular_mayor_diferencia([100,30,15,150,2])) """
 
-# 19
-def es_bisiesto(anio):
-    
-
+print("Clone bien el repositorio")
