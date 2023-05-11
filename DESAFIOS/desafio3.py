@@ -1,3 +1,5 @@
+# Desafío entregable 3: Adivina el número
+
 # Importamos el modulo randon para poder generar el numero aleatorio
 import random
 
@@ -58,4 +60,13 @@ else:
    print("Se ha terminado la cantidad de intentos.-")
    print("El numero que tenia que adivinar es:", numero_aleatorio)
 
+# Tourn Paula
+# Alarcon Jorge
+# Morla Lucas
+# Bullon Rene
+# Romero Benjamin
+# Aguirre Mauricio
+# Boscarino Juan Esteban
+# Sanchez Faby
+# Rios Gerardo
 
