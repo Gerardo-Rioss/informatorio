@@ -65,3 +65,21 @@ print(es_palindromo("ror")) """
     return suma / len(lista_numeros) 
 print(promedio([10,30,45])) """
 
+# 10
+""" def calcular_factorial(numero):
+    factorial= numero
+    for i in range(numero -1,0,-1):
+        factorial = factorial * i
+    return factorial
+print(calcular_factorial(5)) """
+
+# 11
+def contar_vocales(texto):
+    vocales = "aeiou"
+    suma = 0
+    for letra in texto:
+        if letra.lower() in vocales:
+            suma += 1
+    return suma
+
+print(contar_vocales("Gerardo German Rios"))
