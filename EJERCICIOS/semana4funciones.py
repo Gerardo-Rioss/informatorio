@@ -74,7 +74,7 @@ print(promedio([10,30,45])) """
 print(calcular_factorial(5)) """
 
 # 11
-def contar_vocales(texto):
+""" def contar_vocales(texto):
     vocales = "aeiou"
     suma = 0
     for letra in texto:
@@ -83,3 +83,24 @@ def contar_vocales(texto):
     return suma
 
 print(contar_vocales("Gerardo German Rios"))
+ """
+
+ # 12
+""" def convertir_temperatura(temperatura):
+    return (temperatura*9/5)+32
+print(convertir_temperatura(30)) """
+
+# 13
+""" def calcular_descuento(precio, porcentaje_descuento):
+    return precio-(precio*porcentaje_descuento)/100
+print(calcular_descuento(300,20)) """
+
+# 14
+""" def encontrar_maximo(lista_numeros):
+    return max(lista_numeros)
+print(encontrar_maximo([10,5,2,40,100]))     """
+
+# 15
+""" def contar_palabras(texto):
+    return len(texto.split())
+print(contar_palabras("Hola como estas")) """
