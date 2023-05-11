@@ -115,7 +115,7 @@ print(contar_palabras("Hola como estas")) """
 print(eliminar_duplicados([100,30,50,100,300,350,40,350])) """
 
 # 17
-def es_anagramas(texto1,texto2):
+""" def es_anagramas(texto1,texto2):
     lista_texto1 = list(texto1)
     lista_texto2 = list(texto2)
     lista_texto1.sort()
@@ -123,6 +123,7 @@ def es_anagramas(texto1,texto2):
     if lista_texto1 == lista_texto2:
         return True
     else:
-        return False
-    
+        return False """
+
+
 
