@@ -43,10 +43,25 @@ print(es_divisible(4,2))
 print(es_par(11)) """
 
 # 7
-def imprimir_pares(numero):
+""" def imprimir_pares(numero):
     for i in range(1,numero+1):
         if i %2 ==0:
             return i
+print(imprimir_pares(20)) """
 
-print(imprimir_pares(20))
-        
+# 8
+""" def es_palindromo(texto):
+    if texto == texto[::-1]:
+        return "ES PALINDROMO"
+    else:
+        return "NO ES PALINDROMO"
+print(es_palindromo("ror")) """
+
+# 9
+""" def promedio(lista_numeros):
+    suma =0
+    for i in range(0,len(lista_numeros)):
+        suma+= lista_numeros[i]     
+    return suma / len(lista_numeros) 
+print(promedio([10,30,45])) """
+
