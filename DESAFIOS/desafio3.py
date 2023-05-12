@@ -14,21 +14,21 @@ numero_aleatorio = random.randint(1,100)
 
 # Mostramos al usuario el msj de bienvenida y explicamos de que se trata el juego
 print("---------------------------------------")
-print("Bienvenido al juego.-")
+print("        Bienvenido al juego")
 print("Debe adivinar un numero entre 1 y 100.-")
-print("Tiene 8 intentos, Buena Suerte !!!")
+print("  Tiene 8 intentos, Buena Suerte !!!")
 print("---------------------------------------")
 
 # Pedimos que ingrese su nombre
 nombre = input("Ingrese su nombre: ")
 
 # En este while controlamos que siga pidiendo que ingrese el nombre mientras ingrese no ingrese el nombre o ingrese solo numeros
-while nombre =="" or nombre.isdigit():
+while nombre.isspace() or nombre =="" or nombre.isdigit():
 
    # Mensaje de error y pide que vuelva a ingresar su nombre hasta que ingrese los datos correctos
-   print("--------------------------------------------")
+   print("-------------------------------------------------")
    print("##########  ERROR, datos incorrectos  ##########")
-   print("--------------------------------------------")
+   print("-------------------------------------------------")
    nombre = input("Ingrese su nombre:")
 
 else:
@@ -39,7 +39,7 @@ else:
       print("--------------------------------------------")
       print("======== Intentos restantes:",7-numero_intento, "========")
       print("--------------------------------------------")
-      print("----------",intentos[numero_intento], "intento----------")
+      print("         ",intentos[numero_intento], "intento         ")
 
       # contamos el intento
       numero_intento +=1
@@ -60,7 +60,9 @@ else:
             elif numero_elegido< numero_aleatorio:
                print("El numero que eligio es MENOR al que tiene que adivinar.-")
             else:
-               print("FELICITACIONES",nombre,"adivinaste el valor en el", intentos[numero_intento-1],"intento.-")
+               print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+               print("         FELICITACIONES",nombre,"adivinaste el valor en el", intentos[numero_intento-1],"intento.         ")
+               print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
                break   
          else:     
             # Mensaje de error si ingresa un valor fuera del rango pedido   
@@ -73,8 +75,11 @@ else:
          numero_intento -=1         
    else:   
       # Mensaje comunicando que termino la cantidad de intentos y mostramos el valor que tenia que haber adivinado con su nombre ingresado
-      print(nombre,"se te ha terminado la cantidad de intentos.-")
-      print("******** El numero que tenia que adivinar es:", numero_aleatorio,"********")
+      print("                                                                          ")
+      print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+      print("          ",nombre,"se te ha terminado la cantidad de intentos.-")
+      print("                El numero que tenia que adivinar es:", numero_aleatorio,"         ")
+      print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
    
 
 # Tourn Paula
