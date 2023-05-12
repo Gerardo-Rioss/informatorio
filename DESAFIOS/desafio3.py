@@ -8,6 +8,7 @@ intentos = ("Primer","Segundo","Tercer","Cuarto","Quinto","Sexto","Septimo","Oct
 
 # Al iniciar el juego el numero de intentos comienza con el 1 que seria el primer intento
 numero_intento = 0
+lista_numeros_elegidos = []
 
 # Generamos el nro aleatorio y lo asignamos a la variable 
 numero_aleatorio = random.randint(1,100)
@@ -35,16 +36,17 @@ else:
     # creamos una estructura pepetitiva que salga cuando se le termine los intentos
    while numero_intento <= 7:
 
+
       # msj de que numero de intento restantes, intento actual y pedimos que eliga un numero 
-      print("--------------------------------------------")
+      print("                                                                               ")
       print("======== Intentos restantes:",7-numero_intento, "========")
       print("--------------------------------------------")
       print("         ",intentos[numero_intento], "intento         ")
 
       # contamos el intento
       numero_intento +=1
-      numero_elegido = input("Eliga el número: ")      
-      
+      numero_elegido = input("Eliga el número: ")    
+            
       #controlamos que el caracter ingresado se puede convertir en entero
       if numero_elegido.isdigit() == True:         
 
@@ -53,17 +55,27 @@ else:
 
          #controlamos que este dentro del rango entre 1 y 100
          if numero_elegido>=1 and numero_elegido<=100: 
-
-            #controlamos si es mayor menor o igual y mostramos los msj correspondientes
-            if numero_elegido> numero_aleatorio:
-               print("El numero que eligio es MAYOR al que tiene que adivinar.-")
-            elif numero_elegido< numero_aleatorio:
-               print("El numero que eligio es MENOR al que tiene que adivinar.-")
+            # Controla si volvio a repetir el numero ingresado
+            if numero_elegido in lista_numeros_elegidos:
+               print("                                                                               ")
+               print("============      ESTE NUMERO YA LO ELIGIO, INGRESE NUEVAMENTE      ============")
+               print("-------------------------------------------------------------------------------")
+               numero_intento -= 1
             else:
-               print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-               print("         FELICITACIONES",nombre,"adivinaste el valor en el", intentos[numero_intento-1],"intento.         ")
-               print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-               break   
+               # Si es un numero nuevo lo agregamos en la lista para el control si repite el valor
+               lista_numeros_elegidos.append(numero_elegido)
+               #controlamos si es mayor menor o igual y mostramos los msj correspondientes
+               if numero_elegido> numero_aleatorio:
+                  print("El numero que eligio es MAYOR al que tiene que adivinar.-")
+               elif numero_elegido< numero_aleatorio:
+                  print("El numero que eligio es MENOR al que tiene que adivinar.-")
+               else:
+                  print("                                                                               ")
+                  print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                  print("         FELICITACIONES",nombre,"adivinaste el valor en el", intentos[numero_intento-1],"intento.         ")
+                  print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
+                  break   
+
          else:     
             # Mensaje de error si ingresa un valor fuera del rango pedido   
             print("ERROR, El numero ingresado tiene que ser entre 1 y 100.-")                         
@@ -77,7 +89,7 @@ else:
       # Mensaje comunicando que termino la cantidad de intentos y mostramos el valor que tenia que haber adivinado con su nombre ingresado
       print("                                                                          ")
       print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-      print("          ",nombre,"se te ha terminado la cantidad de intentos.-")
+      print("          ",nombre,", se te ha terminado la cantidad de intentos.-")
       print("                El numero que tenia que adivinar es:", numero_aleatorio,"         ")
       print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
    
