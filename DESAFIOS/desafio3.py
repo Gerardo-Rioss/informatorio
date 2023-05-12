@@ -4,7 +4,7 @@
 import random
 
 # creamos una tupla con los intentos
-intentos = ("Primer","Segundo","Tercer","Cuarto","Quinto","Sexto","Septimo","Optavo y ultimo")
+intentos = ("Primer","Segundo","Tercer","Cuarto","Quinto","Sexto","Septimo","Octavo y ultimo")
 
 # Al iniciar el juego el numero de intentos comienza con el 1 que seria el primer intento
 numero_intento = 0
