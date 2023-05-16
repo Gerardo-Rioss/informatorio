@@ -31,12 +31,24 @@ def validar_garaje(garaje):
     if not garaje.isdigit() or garaje =="" or garaje.isspace() or garaje not in opciones:
         return False
     return True
-
-def validar_zona(zona):
-    opciones ="ABC"
-    if not zona.isdigit() or zona =="" or zona.isspace() or (zona.upper() not in opciones):
+# funcion para validar que las ZONAS no sean numeros, espacios vacios...solo puede ingresar A,B o c
+def validar_zonas(zona):
+    opciones ="ABC"    
+    if zona.isdigit() or zona =="" or zona.isspace() or zona.upper() not in opciones:
+        return False
+    return True
+# funcion para validar que los ESTADOS sean numeros, no espacios vacios...solo puede ingresar 1 2 3
+def validar_estado(estado):
+    opciones ="123"    
+    if not estado.isdigit() or estado =="" or estado.isspace() or estado not in opciones:
         return False
     return True
 
-
-print(validar_zona("a"))
+# AGREGAR INMUEBLE
+anio_inmueble =input("Ingrese el año del inmueble: ")
+while validar_anio(anio_inmueble) == False or anio_inmueble.upper()=="EXIT":
+    print("--------        AÑO        --------")
+    print("--------        Los datos ingresados son incorrectos        --------")
+    anio_inmueble =input("Ingrese el año del inmueble: ")
+        
+        
