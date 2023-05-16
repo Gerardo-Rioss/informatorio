@@ -7,8 +7,16 @@ lista_inmuebles = {'año': 2010, 'metros': 150, 'habitaciones': 4, 'garaje': Tru
 datos_correctos = {"correcto" : False}
 zonas=("A","B","C")
 
+
 def anio_correcto():
-    while len(anio) !=4 and anio.isdigit() and anio.isspace():
+    while true:
         anio = input("Año: ")
-    else:
-        print("----- Ingreso datos incorrectos!!! vuelva a intentarlo -----")
+        if len(anio) !=4:
+            print("El año tiene que tener cuatro digitos, intentelo de nuevo")
+            continue
+        if not anio.isdigit():
+            print("El año debe ser solo numeros. Intetelo de nuevo")
+            continue
+        break
+
+print (anio_correcto())
