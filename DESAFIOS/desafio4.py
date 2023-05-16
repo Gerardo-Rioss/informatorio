@@ -43,12 +43,45 @@ def validar_estado(estado):
     if not estado.isdigit() or estado =="" or estado.isspace() or estado not in opciones:
         return False
     return True
-
+        
 # AGREGAR INMUEBLE
-anio_inmueble =input("Ingrese el año del inmueble: ")
-while validar_anio(anio_inmueble) == False or anio_inmueble.upper()=="EXIT":
-    print("--------        AÑO        --------")
-    print("--------        Los datos ingresados son incorrectos        --------")
-    anio_inmueble =input("Ingrese el año del inmueble: ")
+def agregar_inmueble():
+    
+    print("--------        DATOS DEL INMUEBLE        --------(Escriba EXIT si decide cancelar la operación)")
+    anio =input("Año: ")
+    while validar_anio(anio)==False:
+        anio = input("ERROR en datos ingresados en AÑOS, intentelo nuevamente: ")
+
+    if validar_anio(anio) == True:    
+        metros =input("Metros cuadrados: ")
+        while validar_metros(metros) == False:
+            metros = input("ERROR en datos ingresados en METROS, intentelo nuevamente: ")
         
+    if validar_metros(metros)==True:   
+        habitaciones =input("Cantidad de habitaciones: ")
+        while validar_habitaciones(habitaciones) == False:
+            input("ERROR en datos ingresados en HABITACIONES, intentelo nuevamente: ")
+                            
+    if validar_habitaciones(habitaciones)==True:           
+        garaje =input("Tiene garaje ( 1=SI / 2=NO): ")
+        while validar_garaje(garaje) == False:
+            input("ERROR en datos ingresados en GARAJE, intentelo nuevamente ( 1=SI / 2=NO): ")
         
+    if validar_garaje(garaje)==True:
+        zona =input("Ingrese la zona (A,B,C): ")
+        while validar_zonas(zona) == False:
+            input("ERROR en datos ingresados en ZONA, intentelo nuevamente (A,B,C): ")
+        
+    if validar_zonas(zona)==True:
+        lista_inmuebles["año"] = anio
+        lista_inmuebles["metros"] = metros
+        lista_inmuebles["habitaciones"] = habitaciones
+        if garaje =="1":
+            lista_inmuebles["garaje"] = True
+        else:
+            lista_inmuebles["garaje"] = False
+        lista_inmuebles["zona"] = zona.upper()
+        lista_inmuebles["estado"] = "Disponible"
+                
+
+agregar_inmueble()
