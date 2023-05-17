@@ -13,7 +13,14 @@ lista_inmuebles = [
 
 # funcion para validad que los datos ingresados en AÑO sea un valor entero de 4 digitos y controle que no ingrese vacios 
 def validar_anio(anio):
-    if len(anio)!=4 or not anio.isdigit() or anio == '' or anio.isspace() or int(anio)<2000:
+    if len(anio)!=4:  #or anio == '' or anio.isspace() or int(anio)<2000:
+        print('ERROR, tiene que ser un numero de cuatro digitos...')
+    elif anio.isdigit() == False:
+        print('ERROR, tiene que ser un numero entero...')
+    elif anio == '' or anio.isspace()== True:
+        print('ERROR, no puede contener espacios en blanco...')
+    elif int(anio)<=2000:
+        print('ERROR, el año debe ser mayor al año 2000...')
         return False
     return True
 # funcion para validad que los datos ingresados en los METROS que sean enteros y que no ingrese vacios 
@@ -47,7 +54,7 @@ def agregar_inmueble():
     print('--------        DATOS DEL INMUEBLE        --------')
     anio =input('Año: ')
     while validar_anio(anio)==False:
-        anio = input('ERROR en datos ingresados en AÑOS, intentelo nuevamente: ')
+        anio = input('Año: ')
     else:    
         metros =input('Metros cuadrados: ')
         while validar_metros(metros) == False:
@@ -76,3 +83,6 @@ def agregar_inmueble():
                         nuevo_inmueble['zona'] = zona.upper()
                         nuevo_inmueble['estado'] = 'Disponible'
                         lista_inmuebles.append(nuevo_inmueble)
+
+agregar_inmueble()
+#print(validar_anio('1900'))
