@@ -1,11 +1,11 @@
-inmuebles = [
+lista_inmuebles = [
 {'año': 2010, 'metros': 150, 'habitaciones': 4, 'garaje': True, 'zona': 'C', 'estado': 'Disponible'},
 {'año': 2016, 'metros': 80, 'habitaciones': 2, 'garaje': False, 'zona': 'B', 'estado': 'Reservado'},
 {'año': 2000, 'metros': 180, 'habitaciones': 4, 'garaje': True, 'zona': 'A', 'estado': 'Disponible'},
 {'año': 2015, 'metros': 95, 'habitaciones': 3, 'garaje': True, 'zona': 'B', 'estado': 'Vendido'},
 {'año': 2008, 'metros': 60, 'habitaciones': 2, 'garaje': False, 'zona': 'C', 'estado': 'Disponible'}
 ]
-zonas=('A','B','C')
+
 
 #                             DECLARACION  DE FUNCIONES:
 
@@ -28,26 +28,22 @@ def validar_habitaciones(habitaciones):
     return True
 # funcion para validad que los datos ingresados en GARAJE que sean enteros y que no ingrese vacios (solo puede ingresar 1 o 2) 
 def validar_garaje(garaje):
-    opciones ='12'
-    if not garaje.isdigit() or garaje =='' or garaje.isspace() or garaje not in opciones:
+    if not garaje.isdigit() or garaje =='' or garaje.isspace() or garaje not in ('1','2'):
         return False
     return True
 # funcion para validar que las ZONAS no sean numeros, espacios vacios...solo puede ingresar A,B o c
 def validar_zonas(zona):
-    opciones ='ABC'    
-    if zona.isdigit() or zona =='' or zona.isspace() or zona.upper() not in opciones:
+    if zona.isdigit() or zona =='' or zona.isspace() or zona.upper() not in ('A','B','C'):
         return False
     return True
-# funcion para validar que los ESTADOS sean numeros, no espacios vacios...solo puede ingresar 1 2 3
+# funcion para validar que los ESTADOS sean numeros, no espacios vacios...solo puede ingresar 1(Disponible) 2(Reservado) 3(Vendido)
 def validar_estado(estado):
-    opciones ='123'    
-    if not estado.isdigit() or estado =='' or estado.isspace() or estado not in opciones:
+    if not estado.isdigit() or estado =='' or estado.isspace() or estado not in ('1','2','3'):
         return False
     return True
 
 # AGREGAR INMUEBLE
 def agregar_inmueble():
-    print(inmuebles)
     print('--------        DATOS DEL INMUEBLE        --------')
     anio =input('Año: ')
     while validar_anio(anio)==False:
@@ -69,16 +65,14 @@ def agregar_inmueble():
                     while validar_zonas(zona) == False:
                         input('ERROR en datos ingresados en ZONA, intentelo nuevamente (A,B,C): ')
                     else:
-                        inmuebles['año'] = int(anio)
-                        inmuebles['metros'] = metros
-                        inmuebles['habitaciones'] = habitaciones
+                        nuevo_inmueble={}
+                        nuevo_inmueble['año'] = int(anio)
+                        nuevo_inmueble['metros'] = int(metros)
+                        nuevo_inmueble['habitaciones'] = int(habitaciones)
                         if garaje =='1':
-                            inmuebles['garaje'] = True
+                            nuevo_inmueble['garaje'] = True
                         else:
-                            inmuebles['garaje'] = False
-                        inmuebles['zona'] = zona.upper()
-                        inmuebles['estado'] = 'Disponible'
-    print(inmuebles)
-
-
-
+                            nuevo_inmueble['garaje'] = False
+                        nuevo_inmueble['zona'] = zona.upper()
+                        nuevo_inmueble['estado'] = 'Disponible'
+                        lista_inmuebles.append(nuevo_inmueble)
