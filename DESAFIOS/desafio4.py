@@ -80,5 +80,5 @@ def agregar_inmueble():
                         inmuebles['estado'] = 'Disponible'
     print(inmuebles)
 
-
+agregar_inmueble()
 
