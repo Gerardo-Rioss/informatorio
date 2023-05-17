@@ -40,9 +40,15 @@ def validar_metros(metros):
 
 # funcion para validad que los datos ingresados en HABITACIONES que sean enteros y que no ingrese vacios 
 def validar_habitaciones(habitaciones):
-    if not habitaciones.isdigit() or habitaciones =='' or habitaciones.isspace() or int(habitaciones)<2:
+    if habitaciones =='' or habitaciones.isspace()==False:
+        print("ERROR, no puede contener espacios en blanco...")
+    elif habitaciones.isdigit() == False:
+        print("ERROR, tiene que ser un numero entero...")
+    elif int(habitaciones)<2:
+        print("ERROR, el inmueble no puede tener menos de dos habitaciones...")
         return False
     return True
+
 # funcion para validad que los datos ingresados en GARAJE que sean enteros y que no ingrese vacios (solo puede ingresar 1 o 2) 
 def validar_garaje(garaje):
     if not garaje.isdigit() or garaje =='' or garaje.isspace() or garaje not in ('1','2'):
