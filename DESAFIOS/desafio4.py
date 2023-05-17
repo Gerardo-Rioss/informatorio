@@ -23,14 +23,21 @@ def validar_anio(anio):
         print('ERROR, tiene que ser un numero de cuatro digitos...')
         return False
     elif int(anio)<2000:
-        print('ERROR, el año debe ser mayor al año 2000...')
+        print('ERROR, el inmueble debe ser mayor al año 2000...')
         return False
     return True
+
 # funcion para validad que los datos ingresados en los METROS que sean enteros y que no ingrese vacios 
 def validar_metros(metros):
-    if not metros.isdigit() or metros == '' or metros.isspace() or int(metros)<60:
+    if metros == '' or metros.isspace()==False:
+        print("ERROR, no puede contener espacios en blanco...")
+    elif metros.isdigit()==False: 
+        print("ERROR, tiene que ser un numero entero...")
+    elif int(metros)<60:
+        print("ERROR, el inmueble no puede tener menos de 60 metros cuadrados...")
         return False
     return True
+
 # funcion para validad que los datos ingresados en HABITACIONES que sean enteros y que no ingrese vacios 
 def validar_habitaciones(habitaciones):
     if not habitaciones.isdigit() or habitaciones =='' or habitaciones.isspace() or int(habitaciones)<2:
