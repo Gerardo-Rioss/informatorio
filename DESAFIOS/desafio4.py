@@ -6,13 +6,10 @@ lista_inmuebles = [
 {'año': 2008, 'metros': 60, 'habitaciones': 2, 'garaje': False, 'zona': 'C', 'estado': 'Disponible'}
 ]
 
-
-#                             DECLARACION  DE FUNCIONES:
-
 # VALIDACION DE DATOS INGRESADOS:
-
-
+# AÑO
 def validar_anio(anio):
+    # si el dato de entrada es anio
     if anio =='' or anio.isspace()== True:
         print('ERROR, no puede contener espacios en blanco...')
         return False
@@ -27,7 +24,7 @@ def validar_anio(anio):
         return False
     return True
 
-
+# METROS
 def validar_metros(metros):
     if metros == '' or metros.isspace()==True:
         print('ERROR, no puede contener espacios en blanco...')
@@ -40,7 +37,7 @@ def validar_metros(metros):
         return False
     return True
 
-
+# HABITACIONES
 def validar_habitaciones(habitaciones):
     if habitaciones =='' or habitaciones.isspace()==True:
         print('ERROR, no puede contener espacios en blanco...')
@@ -53,7 +50,7 @@ def validar_habitaciones(habitaciones):
         return False
     return True
 
-
+# GARAJE
 def validar_garaje(garaje):
     if garaje =='' or garaje.isspace() == True:
         print('ERROR, no puede contener espacios en blanco...')
@@ -63,7 +60,7 @@ def validar_garaje(garaje):
         return False
     return True
 
-
+# ZONA
 def validar_zonas(zona):
     if zona =='' or zona.isspace()==True:
         print('ERROR, no puede contener espacios en blanco...')
@@ -73,18 +70,18 @@ def validar_zonas(zona):
         return False
     return True
 
-
+# ESTADO
 def validar_estado(estado):
     if estado =='' or estado.isspace():
         print('ERROR, no puede contener espacios en blanco...')
     elif estado not in ('1','2','3'):
-        print('ERROR, elige el valor segun correponda: 1 - Disponible / 2 - Reservado / 3 - Vendido...')
+        print('ERROR, Ingresa el valor segun correponda al estado del inmueble: 1 - Disponible / 2 - Reservado / 3 - Vendido...')
         return False
     return True
 
-# AGREGAR INMUEBLE
-def agregar_inmueble():
-    print('--------        DATOS DEL INMUEBLE        --------')
+# FUNCION PARA INGRESO DE DATOS DEL INMUEBLE
+# Esta funcion es para ingresar los datos del inmueble, controla que ingrese los valores correctos y retorna un diccionario con dichos datos
+def ingresar_inmueble():    
     anio =input('Año: ')
     while validar_anio(anio)==False:
         anio = input('Año: ')
@@ -105,15 +102,52 @@ def agregar_inmueble():
                     while validar_zonas(zona) == False:
                         zona =input('Ingrese la zona (A,B,C): ')
                     else:
-                        nuevo_inmueble={}
-                        nuevo_inmueble['año'] = int(anio)
-                        nuevo_inmueble['metros'] = int(metros)
-                        nuevo_inmueble['habitaciones'] = int(habitaciones)
-                        if garaje =='1':
-                            nuevo_inmueble['garaje'] = True
+                        estado = input('Ingresa el valor segun correponda al estado del inmueble: 1 - Disponible / 2 - Reservado / 3 - Vendido : ')
+                        while validar_estado(estado) == False:
+                            estado = input('Ingresa el valor segun correponda al estado del inmueble: 1 - Disponible / 2 - Reservado / 3 - Vendido : ' )
                         else:
-                            nuevo_inmueble['garaje'] = False
-                        nuevo_inmueble['zona'] = zona.upper()
-                        nuevo_inmueble['estado'] = 'Disponible'
-                        lista_inmuebles.append(nuevo_inmueble)
+                            inmueble_ingresado={}
+                            inmueble_ingresado['año'] = int(anio)
+                            inmueble_ingresado['metros'] = int(metros)
+                            inmueble_ingresado['habitaciones'] = int(habitaciones)
+                            if garaje =='1':
+                                inmueble_ingresado['garaje'] = True
+                            else:
+                                inmueble_ingresado['garaje'] = False
+                            inmueble_ingresado['zona'] = zona.upper()
+                            if estado == '1':
+                                inmueble_ingresado['estado'] = 'Disponible'
+                            elif estado == '2':
+                                inmueble_ingresado['estado'] = 'Reservado'
+                            else:
+                                inmueble_ingresado['estado'] = 'Vendido'
+                            return inmueble_ingresado
+
+# FUNCION PARA IMPRIMIR LA LISTA COMPLETA DE INMUEBLES
+def imprimir_lista():
+    for inmueble in lista_inmuebles:
+        print(inmueble)
+
+# FUNCION PARA AGREGAR UN INMUEBLE NUEVO
+def agregar_inmueble(nuevo_inmueble):
+    lista_inmuebles.append(nuevo_inmueble)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
