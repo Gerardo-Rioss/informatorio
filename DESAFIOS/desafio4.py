@@ -11,9 +11,9 @@ lista_inmuebles = [
 
 # VALIDACION DE DATOS INGRESADOS:
 
-# funcion para validad que los datos ingresados en AÑO sea un valor entero de 4 digitos y controle que no ingrese vacios 
+
 def validar_anio(anio):
-    if anio == '' or anio.isspace()== True:
+    if anio =='' or anio.isspace()== True:
         print('ERROR, no puede contener espacios en blanco...')
         return False
     elif anio.isdigit() == False:
@@ -27,41 +27,58 @@ def validar_anio(anio):
         return False
     return True
 
-# funcion para validad que los datos ingresados en los METROS que sean enteros y que no ingrese vacios 
+
 def validar_metros(metros):
-    if metros == '' or metros.isspace()==False:
-        print("ERROR, no puede contener espacios en blanco...")
+    if metros == '' or metros.isspace()==True:
+        print('ERROR, no puede contener espacios en blanco...')
+        return False
     elif metros.isdigit()==False: 
-        print("ERROR, tiene que ser un numero entero...")
+        print('ERROR, tiene que ser un numero entero...')
+        return False
     elif int(metros)<60:
-        print("ERROR, el inmueble no puede tener menos de 60 metros cuadrados...")
+        print('ERROR, el inmueble no puede tener menos de 60 metros cuadrados...')
         return False
     return True
 
-# funcion para validad que los datos ingresados en HABITACIONES que sean enteros y que no ingrese vacios 
+
 def validar_habitaciones(habitaciones):
-    if habitaciones =='' or habitaciones.isspace()==False:
-        print("ERROR, no puede contener espacios en blanco...")
+    if habitaciones =='' or habitaciones.isspace()==True:
+        print('ERROR, no puede contener espacios en blanco...')
+        return False
     elif habitaciones.isdigit() == False:
-        print("ERROR, tiene que ser un numero entero...")
+        print('ERROR, tiene que ser un numero entero...')
+        return False
     elif int(habitaciones)<2:
-        print("ERROR, el inmueble no puede tener menos de dos habitaciones...")
+        print('ERROR, el inmueble no puede tener menos de dos habitaciones...')
         return False
     return True
 
-# funcion para validad que los datos ingresados en GARAJE que sean enteros y que no ingrese vacios (solo puede ingresar 1 o 2) 
+
 def validar_garaje(garaje):
-    if not garaje.isdigit() or garaje =='' or garaje.isspace() or garaje not in ('1','2'):
+    if garaje =='' or garaje.isspace() == True:
+        print('ERROR, no puede contener espacios en blanco...')
+        return False
+    elif garaje not in ('1','2'):
+        print('ERROR, los valores que debe ingresar son: 1 = SI / 2 = NO ...')
         return False
     return True
-# funcion para validar que las ZONAS no sean numeros, espacios vacios...solo puede ingresar A,B o c
+
+
 def validar_zonas(zona):
-    if zona.isdigit() or zona =='' or zona.isspace() or zona.upper() not in ('A','B','C'):
+    if zona =='' or zona.isspace()==True:
+        print('ERROR, no puede contener espacios en blanco...')
+        return False
+    elif zona.upper() not in ('A','B','C'):
+        print('ERROR, tiene que elegir unas de las zonas: A - B - C ...' )
         return False
     return True
-# funcion para validar que los ESTADOS sean numeros, no espacios vacios...solo puede ingresar 1(Disponible) 2(Reservado) 3(Vendido)
+
+
 def validar_estado(estado):
-    if not estado.isdigit() or estado =='' or estado.isspace() or estado not in ('1','2','3'):
+    if estado =='' or estado.isspace():
+        print('ERROR, no puede contener espacios en blanco...')
+    elif estado not in ('1','2','3'):
+        print('ERROR, elige el valor segun correponda: 1 - Disponible / 2 - Reservado / 3 - Vendido...')
         return False
     return True
 
@@ -74,19 +91,19 @@ def agregar_inmueble():
     else:    
         metros =input('Metros cuadrados: ')
         while validar_metros(metros) == False:
-            metros = input('ERROR en datos ingresados en METROS, intentelo nuevamente: ')
+            metros =input('Metros cuadrados: ')
         else:
             habitaciones =input('Cantidad de habitaciones: ')
             while validar_habitaciones(habitaciones) == False:
-                input('ERROR en datos ingresados en HABITACIONES, intentelo nuevamente: ')
+                habitaciones =input('Cantidad de habitaciones: ')
             else:
                 garaje =input('Tiene garaje ( 1=SI / 2=NO): ')
                 while validar_garaje(garaje) == False:
-                    input('ERROR en datos ingresados en GARAJE, intentelo nuevamente ( 1=SI / 2=NO): ')
+                    garaje =input('Tiene garaje? ( 1=SI / 2=NO): ')
                 else:
                     zona =input('Ingrese la zona (A,B,C): ')
                     while validar_zonas(zona) == False:
-                        input('ERROR en datos ingresados en ZONA, intentelo nuevamente (A,B,C): ')
+                        zona =input('Ingrese la zona (A,B,C): ')
                     else:
                         nuevo_inmueble={}
                         nuevo_inmueble['año'] = int(anio)
@@ -100,5 +117,3 @@ def agregar_inmueble():
                         nuevo_inmueble['estado'] = 'Disponible'
                         lista_inmuebles.append(nuevo_inmueble)
 
-print(validar_anio('2001'))
-#print(validar_anio('1900'))
