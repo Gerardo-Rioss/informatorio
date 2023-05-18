@@ -133,24 +133,17 @@ def editar_inmueble(inmueble_a_editar):
         print('ERROR - El inmueble ingresado no se encuentra ingresado al sistema!!!')
 
 
-# PROGRAMA:
+# FUNCION EDITAR INMUEBLE
+def editar_inmueble():
+    elemento = ingresar_inmueble()
+    if elemento in lista_inmuebles:
+        print('Inmueble econtrado con exito: ')
+        indice_encontrado = lista_inmuebles.index(elemento)
+        print(lista_inmuebles[indice_encontrado])
+    else:
+        print('No se econtro el inmueble ingresado!!!')
+
+
+
 imprimir_lista()
-agregar_inmueble(ingresar_inmueble())
-imprimir_lista()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+editar_inmueble()
