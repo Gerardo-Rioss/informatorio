@@ -139,13 +139,33 @@ def editar_inmueble():
         print('Inmueble modificado con éxito!!! quedo de la siguiente manera: ')
         print(lista_inmuebles[indice_encontrado])
     else:
-
         print('No se econtro el inmueble ingresado!!!')
 
+# FUNCION ELIMINAR INMUEBLE
+def eliminar_inmueble():
+    inmueble_a_eliminar = ingresar_inmueble()
+    if inmueble_a_eliminar in lista_inmuebles:
+        print('------------------------------')
+        print('Inmueble econtrado con exito!!! ')
+        indice_encontrado = lista_inmuebles.index(inmueble_a_eliminar)
+        print(lista_inmuebles[indice_encontrado])
+        lista_inmuebles.pop(indice_encontrado)
+        print('------------------------------')
+        print('Inmueble eliminado con éxito: ')    
+    else:
+        print('No se econtro el inmueble ingresado!!!')
+
+
+
+
+
+# PROGRAMA
 print('------------------------------')
 print('LISTA COMPLETA')
 imprimir_lista()
-editar_inmueble()
+
+eliminar_inmueble()
+
 print('------------------------------')
 print('LISTA COMPLETA')
 imprimir_lista()
