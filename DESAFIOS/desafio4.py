@@ -122,28 +122,30 @@ def imprimir_lista():
 def agregar_inmueble(nuevo_inmueble):
     lista_inmuebles.append(nuevo_inmueble)
 
-# FUNCION EDITAR INMUEBLE
-def editar_inmueble(inmueble_a_editar):
-    if inmueble_a_editar in lista_inmuebles:
-        print('        Ingrese los datos del inmueble con las modificaciones correspondientes:')
-        index_del_inmueble = lista_inmuebles.index(inmueble_a_editar)
-        inmueble_modificado = ingresar_inmueble()
-        lista_inmuebles.index(index_del_inmueble)==inmueble_modificado
-    else:
-        print('ERROR - El inmueble ingresado no se encuentra ingresado al sistema!!!')
-
 
 # FUNCION EDITAR INMUEBLE
 def editar_inmueble():
-    elemento = ingresar_inmueble()
-    if elemento in lista_inmuebles:
-        print('Inmueble econtrado con exito: ')
-        indice_encontrado = lista_inmuebles.index(elemento)
+    inmueble_a_buscar = ingresar_inmueble()
+    if inmueble_a_buscar in lista_inmuebles:
+        print('------------------------------')
+        print('Inmueble econtrado con exito!!! ')
+        indice_encontrado = lista_inmuebles.index(inmueble_a_buscar)
+        print(lista_inmuebles[indice_encontrado])
+        print('------------------------------')
+        print('Ingrese los datos nuevos del inmueble: ')
+        inmueble_modificado = ingresar_inmueble()
+        lista_inmuebles[indice_encontrado]=inmueble_modificado
+        print('------------------------------')
+        print('Inmueble modificado con éxito!!! quedo de la siguiente manera: ')
         print(lista_inmuebles[indice_encontrado])
     else:
+
         print('No se econtro el inmueble ingresado!!!')
 
-
-
+print('------------------------------')
+print('LISTA COMPLETA')
 imprimir_lista()
 editar_inmueble()
+print('------------------------------')
+print('LISTA COMPLETA')
+imprimir_lista()
