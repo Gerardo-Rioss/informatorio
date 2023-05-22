@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-22T00:34:40.280Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="xCmZ7m8dWWc_yElUX27M" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-22T00:35:32.426Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="qHvP8NRvx-RVHPBNVVrR" version="21.3.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1060" dy="638" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -29,16 +29,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="5ByrfbzAKBBucceN1gz2-2" value="Genero" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="481" y="60" width="70" height="30" as="geometry" />
+          <mxGeometry x="515" y="60" width="70" height="30" as="geometry" />
         </mxCell>
         <mxCell id="5ByrfbzAKBBucceN1gz2-6" value="Año" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="83.5" y="189" width="60" height="20" as="geometry" />
         </mxCell>
         <mxCell id="5ByrfbzAKBBucceN1gz2-10" value="id_genero" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="40" width="70" height="20" as="geometry" />
+          <mxGeometry x="654" y="40" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="5ByrfbzAKBBucceN1gz2-12" value="genero" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="620" y="90" width="70" height="20" as="geometry" />
+          <mxGeometry x="654" y="90" width="70" height="20" as="geometry" />
         </mxCell>
         <mxCell id="5ByrfbzAKBBucceN1gz2-13" value="Id_disco" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="81" y="129" width="65" height="20" as="geometry" />
@@ -116,7 +116,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="_NWuFsvi_Tq1ii_9x8-A-12" value="Tiene" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="361" y="128" width="80" height="80" as="geometry" />
+          <mxGeometry x="325" y="128" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="5ByrfbzAKBBucceN1gz2-25" value="Nombre" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="366" y="399" width="70" height="20" as="geometry" />
