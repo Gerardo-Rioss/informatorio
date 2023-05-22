@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-22T13:57:15.472Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="Uj-ivW82kD-DmH1YErxR" version="21.3.2" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2023-05-22T14:51:56.269Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="WH5eskMTAjb0nTcUQhEY" version="21.3.2" type="github" pages="6">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="1">
     <mxGraphModel dx="1195" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -882,6 +882,36 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ba0uKeut3QHpEKMYUTOh-1" target="ba0uKeut3QHpEKMYUTOh-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="90" />
+              <mxPoint x="220" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ba0uKeut3QHpEKMYUTOh-1" target="ba0uKeut3QHpEKMYUTOh-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ba0uKeut3QHpEKMYUTOh-1" target="ba0uKeut3QHpEKMYUTOh-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ba0uKeut3QHpEKMYUTOh-1" target="ba0uKeut3QHpEKMYUTOh-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="90" />
+              <mxPoint x="550" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="ba0uKeut3QHpEKMYUTOh-1" target="ba0uKeut3QHpEKMYUTOh-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="390" y="90" />
+              <mxPoint x="660" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="ba0uKeut3QHpEKMYUTOh-1" value="vuelo" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="340" y="120" width="100" height="40" as="geometry" />
         </mxCell>
@@ -900,11 +930,23 @@
         <mxCell id="ba0uKeut3QHpEKMYUTOh-8" value="horario" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="610" y="20" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="ba0uKeut3QHpEKMYUTOh-9" value="reserva" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="340" y="220" width="100" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="ba0uKeut3QHpEKMYUTOh-10" value="pasajero" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="340" y="340" width="100" height="40" as="geometry" />
+          <mxGeometry x="340" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-16" value="reserva" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="330" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-17" value="&lt;u&gt;id_pasajero&lt;/u&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="190" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-18" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="300" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-20" value="dni" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="413.5" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ba0uKeut3QHpEKMYUTOh-21" value="dni" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="530" y="410" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
