@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-23T21:43:54.102Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="Zj2Yxup3lqK3nzngDh9k" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-23T21:45:26.622Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="Zt2Tzs8zKcbFVTdv9WTS" version="21.3.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="954" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -15,7 +15,7 @@
             <mxPoint x="350" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0o0Okib86JLqIukkB8jU-2" value="escriben" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0o0Okib86JLqIukkB8jU-2" value="escribe" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="310" y="220" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="0o0Okib86JLqIukkB8jU-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="0o0Okib86JLqIukkB8jU-6" target="0o0Okib86JLqIukkB8jU-7">
@@ -29,7 +29,7 @@
             <mxPoint x="630" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0o0Okib86JLqIukkB8jU-7" value="tienen" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="0o0Okib86JLqIukkB8jU-7" value="pertenece" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="490" y="370" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="0o0Okib86JLqIukkB8jU-11" value="categoria" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
