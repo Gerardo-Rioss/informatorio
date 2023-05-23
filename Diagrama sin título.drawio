@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-23T10:01:53.734Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="9NBLQ1n25qgENz_kxyyQ" version="21.3.2" type="github" pages="9">
+<mxfile host="app.diagrams.net" modified="2023-05-23T10:10:32.945Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="zXfRgGMi61D4aPmX6Nyt" version="21.3.2" type="github" pages="9">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="1">
     <mxGraphModel dx="1434" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -1439,6 +1439,18 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="3C6r3OlDyJdKlHjsmVUm-1" value="producto" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3C6r3OlDyJdKlHjsmVUm-2" value="tienda" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3C6r3OlDyJdKlHjsmVUm-4" value="empleado" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="360" y="680" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="3C6r3OlDyJdKlHjsmVUm-5" value="pedido" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="350" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
