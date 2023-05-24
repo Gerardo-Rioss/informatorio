@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-24T09:25:04.710Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="RmSTZFlCKy3uqbiH-VNl" version="21.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-24T09:29:27.076Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0" etag="gIsSwFG4nvbl1pQmu7Is" version="21.3.2" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="1434" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -114,6 +114,30 @@
         </mxCell>
         <mxCell id="yP6CxmxFfOKyHwKfihiG-4" value="idUsuario" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
           <mxGeometry x="20" y="790" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yP6CxmxFfOKyHwKfihiG-8" value="nombre" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="60" y="830" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yP6CxmxFfOKyHwKfihiG-9" value="apellido" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="110" y="870" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yP6CxmxFfOKyHwKfihiG-11" value="usuario" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="210" y="880" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yP6CxmxFfOKyHwKfihiG-12" value="contraseña" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="310" y="880" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yP6CxmxFfOKyHwKfihiG-14" value="fecha_registro" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="390" y="850" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yP6CxmxFfOKyHwKfihiG-15" value="avatar" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="440" y="810" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yP6CxmxFfOKyHwKfihiG-16" value="email" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="480" y="770" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="yP6CxmxFfOKyHwKfihiG-17" value="idUsuario" style="ellipse;whiteSpace=wrap;html=1;align=center;fontStyle=4;" vertex="1" parent="1">
+          <mxGeometry x="10" y="600" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
